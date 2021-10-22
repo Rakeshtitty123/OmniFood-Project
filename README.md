@@ -6,4 +6,4 @@ HomePage Preview
 
 
 
-![](Images/HomePage.JPG)
+![](Images/Home2.JPG)
