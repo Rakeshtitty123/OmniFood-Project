@@ -1,185 +1,182 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        
-        <title>Omni Food Project</title>
-        <!--Since the css file is present in different folder from the index.html file we should mention the complete path inorder to aceess
+
+<head>
+
+    <title>Omni Food Project</title>
+    <!--Since the css file is present in different folder from the index.html file we should mention the complete path inorder to aceess
         it-->
-       <link rel="stylesheet" href="Source Code/css/style1.css">
-       <!--Here we have used the normalise.css framework so that our website will be compatible with any browser from which we 
+    <link rel="stylesheet" href="Source Code/css/style1.css">
+    <!--Here we have used the normalise.css framework so that our website will be compatible with any browser from which we 
     are viewing our website-->
-       <link rel="stylesheet" href="Vendors/grid.css">
+    <link rel="stylesheet" href="Vendors/grid.css">
     <link rel="stylesheet" href="Vendors/css/queries.css">
-       <!--Every website must be responsive for making user friendly
+    <!--Every website must be responsive for making user friendly
     By the word responsive means it should adjust to the screen from which the website is being viewed on
 Every website is divided into 12 columns Here we are using gridsystem.css to provide responsiveness-->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
-<!--viweport is the user's visble area and it scales to the whole width of the device upon which we are viewing the website
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+    <!--viweport is the user's visble area and it scales to the whole width of the device upon which we are viewing the website
 so that user will not zoom in or zoom out of the site-->
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-       <!--<link rel="stylesheet" href="Vendors/css/grid.css">-->
-       <!--The below link is for animations-->
-       <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-       <!--For adding ico in the title bar-->
-       <link rel="icon" href="Source Code/css/images/icon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--<link rel="stylesheet" href="Vendors/css/grid.css">-->
+    <!--The below link is for animations-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!--For adding ico in the title bar-->
+    <link rel="icon" href="Source Code/css/images/icon.png">
 
-    </head>
-    <body>
-       <header>
-           <nav>
-               <div class="row">
-                   <img class="logo" src="Source Code/css/images/omnifoof.png" alt="logo img">
-                   <ul class="main-nav">
-                       <li><a href="#features">Food Delivery</a></li>
-                       <li><a href="#hiw">How it works</a></li>
-                       <li><a href="#city">Our Cities</a></li>
-                       <li><a href="#plans">Sign Up</a></li>
-                   </ul>
-               </div>
-           </nav>
-           <div class="hero_text_box">
-                <h1 id="headtext">GoodBye Junk Food<br>Hello Super Healthy Food!!</h1>
-                <br>
-                <!--Since we want some common properties for both the anchor tags we define same class for both of them as btn
-                Inorder to add some unique properties for both of them we have given different classes as btn-full and btn-ghost-->
-                <a class="btn btn-full" href="#plans">I'm Hungry</a>
-                <a class="btn btn-ghost"href="#features">Show me More</a>
-           </div>
-       </header>
-       <!--section has the same features as div-->
-       <section class="section-features" id="features" data-aos="fade-in" data-aos-duration="2000">
+</head>
+
+<body>
+    <header>
+        <nav>
             <div class="row">
-                <!--there is only one h1 tag is possible in the whole website-->
-                <!--Inorder to have dash in between them we set &mdash inbuilt function-->
-                <h2>Get Food Fast &mdash; Not Fast Food</h2>
-                <p class="long-copy">Hello, we are Omnifood, your new premium food delivery service. We know you are always busy.
-                    No time for cooking. So let us take care of that, we are really good at it, we promise!
+                <img class="logo" src="Source Code/css/images/omnifoof.png" alt="logo img">
+                <ul class="main-nav">
+                    <li><a href="#features">Food Delivery</a></li>
+                    <li><a href="#hiw">How it works</a></li>
+                    <li><a href="#city">Our Cities</a></li>
+                    <li><a href="#plans">Sign Up</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="hero_text_box">
+            <h1 id="headtext">GoodBye Junk Food<br>Hello Super Healthy Food!!</h1>
+            <br>
+            <!--Since we want some common properties for both the anchor tags we define same class for both of them as btn
+                Inorder to add some unique properties for both of them we have given different classes as btn-full and btn-ghost-->
+            <a class="btn btn-full" href="#plans">I'm Hungry</a>
+            <a class="btn btn-ghost" href="#features">Show me More</a>
+        </div>
+    </header>
+    <!--section has the same features as div-->
+    <section class="section-features" id="features" data-aos="fade-in" data-aos-duration="2000">
+        <div class="row">
+            <!--there is only one h1 tag is possible in the whole website-->
+            <!--Inorder to have dash in between them we set &mdash inbuilt function-->
+            <h2>Get Food Fast &mdash; Not Fast Food</h2>
+            <p class="long-copy">Hello, we are Omnifood, your new premium food delivery service. We know you are always busy. No time for cooking. So let us take care of that, we are really good at it, we promise!
+            </p>
+        </div>
+        <div class="row">
+            <!--Here is the col span-1-of-4 class that we have used inorder to set them in the column way 
+                span of 1 of 4 means it can take 4 classes of width 3-->
+            <div class="col span-1-of-4 box">
+                <ion-icon class="icon-big" name="infinite-outline"></ion-icon>
+                <h3>UP TO 365 DAYS/YEAR</h3>
+                <p>Never cook again! We really mean that. Our subscription plans include up to 365 days/year coverage. You can also choose to order more flexibly if that's your style.
                 </p>
             </div>
-            <div class="row">
-                <!--Here is the col span-1-of-4 class that we have used inorder to set them in the column way 
-                span of 1 of 4 means it can take 4 classes of width 3-->
-                <div class="col span-1-of-4 box">
-                    <ion-icon class="icon-big" name="infinite-outline"></ion-icon>
-                    <h3>UP TO 365 DAYS/YEAR</h3>
-                   <p>Never cook again! We really mean that. Our subscription plans include up to 365 days/year coverage. 
-                    You can also choose to order more flexibly if that's your style.
-                 </p>
-                </div>
-                <div class="col span-1-of-4 box">
-                    <ion-icon class="icon-big" name="alarm-outline"></ion-icon>
-                    <h3>READY IN 20 MINUTES</h3>
-                   <p>You're only twenty minutes away from your delicious and super healthy meals delivered right to your home.
-                    We work with the best chefs in each town to ensure that you're 100% happy.
-                 </p>
-                </div>
-                <div class="col span-1-of-4 box">
-                    <ion-icon class="icon-big" name="fast-food-outline"></ion-icon>
-                    <h3>100% ORGANIC</h3>
-                   <p>All our vegetables are fresh, organic and local. Animals are raised without added hormones or antibiotics. 
-                    Good for your health, the environment, and it a lso tastes better!
-                 </p>
-                </div>
-                <div class="col span-1-of-4 box">
-                    <ion-icon class="icon-big" name="cart-outline"></ion-icon>
-                    <h3>ORDER ANYTHING</h3>
-                   <p>We don't limit your creativity, which means you can order whatever you feel like. You can also choose from our
-                    menu containing over 100 delicious meals. It's up to you!
-                 </p>
-                </div>
+            <div class="col span-1-of-4 box">
+                <ion-icon class="icon-big" name="alarm-outline"></ion-icon>
+                <h3>READY IN 20 MINUTES</h3>
+                <p>You're only twenty minutes away from your delicious and super healthy meals delivered right to your home. We work with the best chefs in each town to ensure that you're 100% happy.
+                </p>
             </div>
-            </section>
-        <section class="section-meals" data-aos="fade-in" data-aos-duration="2000">
-            <!--Here we have given exyra class clearfix inorder to clear the floats that we have given in css-->
-            <ul class="meals-showcase clearfix">
-                <li>
-                    <figure class="meal-photo">
-                        <img src="Source Code/css/images/1.jpg" alt="food-img">
-                    </figure>
-                </li>
-                <li>
-                    <figure class="meal-photo">
-                        <img src="Source Code/css/images/2.jpg" alt="food-img">
-                    </figure>
-                </li>
-                <li>
-                    <figure class="meal-photo">
-                        <img src="Source Code/css/images/3.jpg" alt="food-img">
-                    </figure>
-                </li>
-                <li>
-                    <figure class="meal-photo">
-                        <img src="Source Code/css/images/4.jpg" alt="food-img">
-                    </figure>
-                </li>
-            </ul>
-            <ul class="meals-showcase clearfix">
-                <li>
-                    <figure class="meal-photo">
-                        <img src="Source Code/css/images/5.jpg" alt="food-img">
-                    </figure>
-                </li>
-                <li>
-                    <figure class="meal-photo">
-                        <img src="Source Code/css/images/6.jpg" alt="food-img">
-                    </figure>
-                </li>
-                <li>
-                    <figure class="meal-photo">
-                        <img src="Source Code/css/images/7.jpg" alt="food-img">
-                    </figure>
-                </li>
-                <li>
-                    <figure class="meal-photo">
-                        <img src="Source Code/css/images/8.jpg" alt="food-img">
-                    </figure>
-                </li>
-            </ul>
-        </section>
-        <section class="section-steps" id="hiw" data-aos="fade-in" data-aos-duration="2000">
-            <div class="row">
-                 <h2>How it works &mdash; simple as 1, 2, 3</h2>
+            <div class="col span-1-of-4 box">
+                <ion-icon class="icon-big" name="fast-food-outline"></ion-icon>
+                <h3>100% ORGANIC</h3>
+                <p>All our vegetables are fresh, organic and local. Animals are raised without added hormones or antibiotics. Good for your health, the environment, and it a lso tastes better!
+                </p>
             </div>
-            <div class="row">
-                 <div class="col span-1-of-2 steps-box">
-                     <img src="Source Code/css/images/app-iPhone.png" alt="Phone_app img" class="app-screen" data-aos="slide-left" data-aos-duration="2000">
-                 </div>
-                 <div class="col span-1-of-2 steps-box">
-                     <div class="work-steps">
-                         <div>1</div>
-                         <p>Choose the subscription plan that best fits your needs and sign up today.</p>
-                     </div>
-                     <div class="work-steps">
-                        <div class="step-2">2</div>
-                        <p>Order your delicious meal using our mobile app or website. Or you can even call us!</p>
-                    </div>
-                    <div class="work-steps">
-                        <div>3</div>
-                        <p>Enjoy your meal after less than 20 minutes. See you the next time!</p>
-                    </div>
-                    <a href="#" class="btn-app"><img src="Source Code/css/images/download-app-android.png" alt="play-store"></a>
-                    <a href="#"class="btn-app"><img src="Source Code/css/images/download-app.svg" alt="iphone-store"></a>
-                 </div>
+            <div class="col span-1-of-4 box">
+                <ion-icon class="icon-big" name="cart-outline"></ion-icon>
+                <h3>ORDER ANYTHING</h3>
+                <p>We don't limit your creativity, which means you can order whatever you feel like. You can also choose from our menu containing over 100 delicious meals. It's up to you!
+                </p>
             </div>
-        </section>
-        <section class="section-cities" id="city" data-aos="fade-in" data-aos-duration="2000">
-            <div class="row">
+        </div>
+    </section>
+    <section class="section-meals" data-aos="fade-in" data-aos-duration="2000">
+        <!--Here we have given exyra class clearfix inorder to clear the floats that we have given in css-->
+        <ul class="meals-showcase clearfix">
+            <li>
+                <figure class="meal-photo">
+                    <img src="Source Code/css/images/1.jpg" alt="food-img">
+                </figure>
+            </li>
+            <li>
+                <figure class="meal-photo">
+                    <img src="Source Code/css/images/2.jpg" alt="food-img">
+                </figure>
+            </li>
+            <li>
+                <figure class="meal-photo">
+                    <img src="Source Code/css/images/3.jpg" alt="food-img">
+                </figure>
+            </li>
+            <li>
+                <figure class="meal-photo">
+                    <img src="Source Code/css/images/4.jpg" alt="food-img">
+                </figure>
+            </li>
+        </ul>
+        <ul class="meals-showcase clearfix">
+            <li>
+                <figure class="meal-photo">
+                    <img src="Source Code/css/images/5.jpg" alt="food-img">
+                </figure>
+            </li>
+            <li>
+                <figure class="meal-photo">
+                    <img src="Source Code/css/images/6.jpg" alt="food-img">
+                </figure>
+            </li>
+            <li>
+                <figure class="meal-photo">
+                    <img src="Source Code/css/images/7.jpg" alt="food-img">
+                </figure>
+            </li>
+            <li>
+                <figure class="meal-photo">
+                    <img src="Source Code/css/images/8.jpg" alt="food-img">
+                </figure>
+            </li>
+        </ul>
+    </section>
+    <section class="section-steps" id="hiw" data-aos="fade-in" data-aos-duration="2000">
+        <div class="row">
+            <h2>How it works &mdash; simple as 1, 2, 3</h2>
+        </div>
+        <div class="row">
+            <div class="col span-1-of-2 steps-box">
+                <img src="Source Code/css/images/app-iPhone.png" alt="Phone_app img" class="app-screen" data-aos="slide-left" data-aos-duration="2000">
+            </div>
+            <div class="col span-1-of-2 steps-box">
+                <div class="work-steps">
+                    <div>1</div>
+                    <p>Choose the subscription plan that best fits your needs and sign up today.</p>
+                </div>
+                <div class="work-steps">
+                    <div class="step-2">2</div>
+                    <p>Order your delicious meal using our mobile app or website. Or you can even call us!</p>
+                </div>
+                <div class="work-steps">
+                    <div>3</div>
+                    <p>Enjoy your meal after less than 20 minutes. See you the next time!</p>
+                </div>
+                <a href="#" class="btn-app"><img src="Source Code/css/images/download-app-android.png" alt="play-store"></a>
+                <a href="#" class="btn-app"><img src="Source Code/css/images/download-app.svg" alt="iphone-store"></a>
+            </div>
+        </div>
+    </section>
+    <section class="section-cities" id="city" data-aos="fade-in" data-aos-duration="2000">
+        <div class="row">
             <h2>We're currently in these cities</h2>
-        </div> 
+        </div>
         <div class="row">
             <div class="col span-1-of-4 box">
                 <img src="Source Code/css/images/lisbon-3.jpg" alt="lisbon img">
                 <h3>LISBON</h3>
                 <div class="city-features">
-                    <ion-icon name="person-circle-outline"  class="icon-small"></ion-icon>1600+ Happy Eaters
+                    <ion-icon name="person-circle-outline" class="icon-small"></ion-icon>1600+ Happy Eaters
                 </div>
                 <div class="city-features">
-                    <ion-icon name="star-sharp"  class="icon-small"></ion-icon>50+ topchefs
+                    <ion-icon name="star-sharp" class="icon-small"></ion-icon>50+ topchefs
                 </div>
                 <div class="city-features">
-                    <ion-icon name="logo-twitter"  class="icon-small"></ion-icon>
+                    <ion-icon name="logo-twitter" class="icon-small"></ion-icon>
                     <a href="#">@omnifood_lb</a>
                 </div>
             </div>
@@ -187,13 +184,13 @@ so that user will not zoom in or zoom out of the site-->
                 <img src="Source Code/css/images/san-francisco.jpg" alt="san san-francisco img">
                 <h3>SAN-FRANCISCO</h3>
                 <div class="city-features">
-                    <ion-icon name="person-circle-outline"  class="icon-small"></ion-icon>2000+ Happy Eaters
+                    <ion-icon name="person-circle-outline" class="icon-small"></ion-icon>2000+ Happy Eaters
                 </div>
                 <div class="city-features">
-                    <ion-icon name="star-sharp"  class="icon-small"></ion-icon>60+ topchefs
+                    <ion-icon name="star-sharp" class="icon-small"></ion-icon>60+ topchefs
                 </div>
                 <div class="city-features">
-                    <ion-icon name="logo-twitter"  class="icon-small"></ion-icon>
+                    <ion-icon name="logo-twitter" class="icon-small"></ion-icon>
                     <a href="#">@omnifood_san</a>
                 </div>
             </div>
@@ -201,13 +198,13 @@ so that user will not zoom in or zoom out of the site-->
                 <img src="Source Code/css/images/berlin.jpg" alt="berlin img">
                 <h3>BERLIN</h3>
                 <div class="city-features">
-                    <ion-icon name="person-circle-outline"  class="icon-small"></ion-icon>3700+ Happy Eaters
+                    <ion-icon name="person-circle-outline" class="icon-small"></ion-icon>3700+ Happy Eaters
                 </div>
                 <div class="city-features">
-                    <ion-icon name="star-sharp"  class="icon-small"></ion-icon>160+ topchefs
+                    <ion-icon name="star-sharp" class="icon-small"></ion-icon>160+ topchefs
                 </div>
                 <div class="city-features">
-                    <ion-icon name="logo-twitter"  class="icon-small"></ion-icon>
+                    <ion-icon name="logo-twitter" class="icon-small"></ion-icon>
                     <a href="#">@omnifood_br</a>
                 </div>
             </div>
@@ -218,25 +215,24 @@ so that user will not zoom in or zoom out of the site-->
                     <ion-icon name="person-circle-outline" class="icon-small"></ion-icon>1800+ Happy Eaters
                 </div>
                 <div class="city-features">
-                    <ion-icon name="star-sharp"  class="icon-small"></ion-icon>110+ topchefs
+                    <ion-icon name="star-sharp" class="icon-small"></ion-icon>110+ topchefs
                 </div>
                 <div class="city-features">
-                    <ion-icon name="logo-twitter"  class="icon-small"></ion-icon>
-                    <a href="#">@omnifood_london</a> 
+                    <ion-icon name="logo-twitter" class="icon-small"></ion-icon>
+                    <a href="#">@omnifood_london</a>
                 </div>
             </div>
         </div>
-        </section>
-        <section class="section-testimonals" data-aos="fade-in" data-aos-duration="2000">
-            <div class="row">
-                <h2>Our Customers can't live without us</h2>
-            </div>
-            <div class="row">
-                <div class="col span-1-of-3">
-                    <!--Here we have used blockquote as these are reviews these should be in quotes-->
+    </section>
+    <section class="section-testimonals" data-aos="fade-in" data-aos-duration="2000">
+        <div class="row">
+            <h2>Our Customers can't live without us</h2>
+        </div>
+        <div class="row">
+            <div class="col span-1-of-3">
+                <!--Here we have used blockquote as these are reviews these should be in quotes-->
                 <blockquote>
-                    Omnifood is just awesome! I just launched a startup which leaves me with no time for cooking,
-                    so Omnifood is a life-saver. Now that I got used to it, I couldn't live without my daily meals!
+                    Omnifood is just awesome! I just launched a startup which leaves me with no time for cooking, so Omnifood is a life-saver. Now that I got used to it, I couldn't live without my daily meals!
                 </blockquote>
                 <!--cite is for author of the above quotes
                 The <cite> tag defines the title of a creative work (e.g. a book, a poem, a song, a movie, a painting, a sculpture, etc.).-->
@@ -244,239 +240,265 @@ so that user will not zoom in or zoom out of the site-->
             </div>
             <div class="col span-1-of-3">
                 <blockquote>
-                    Inexpensive, healthy and great-tasting meals, delivered right to my home. We have lots of food delivery 
-                    here in Lisbon, but no one comes even close to Omifood. Me and my family are so in love!
+                    Inexpensive, healthy and great-tasting meals, delivered right to my home. We have lots of food delivery here in Lisbon, but no one comes even close to Omifood. Me and my family are so in love!
                 </blockquote>
                 <cite><img src="Source Code/image/customer-2.jpg" alt="cust-2">Joana Silva</cite>
             </div>
             <div class="col span-1-of-3">
                 <blockquote>
-                    I was looking for a quick and easy food delivery service in San Franciso. 
-                    I tried a lot of them and ended up with Omnifood. Best food delivery service in the Bay Area. Keep up the great work!
+                    I was looking for a quick and easy food delivery service in San Franciso. I tried a lot of them and ended up with Omnifood. Best food delivery service in the Bay Area. Keep up the great work!
                 </blockquote>
                 <cite><img src="Source Code/image/customer-3.jpg" alt="cust-3">Milton Chapman</cite>
             </div>
-            </div>
-        </section>
-        <section class="section-plans" id="plans" data-aos="fade-in" data-aos-duration="2000">
-            <div class="row">
-                <h2>Start Eating Healthy Today!</h2>
-            </div>
-            <div class="row">
-                <div class="col span-1-of-3">
-                    <div class="plan-box">
-                        <div data-aos="zoom-in" data-aos-duration="2000">
-                            <h4>Premium</h4>
-                            <p class="plan-price">$399<span> / month</span></p>
-                            <p class="plan-price-meal">That's only 13.30$ per meal</p>
-                        </div>
-                        <div>
-                            <ul>
-                                <li><ion-icon class="icon-small" name="checkmark-outline"></ion-icon>1 meal everyday</li>
-                                <li><ion-icon class="icon-small" name="checkmark-outline"></ion-icon>Order 24/7</li>
-                                <li><ion-icon class="icon-small" name="checkmark-outline"></ion-icon>Access to newest creations</li>
-                                <li><ion-icon class="icon-small" name="checkmark-outline"></ion-icon>Free delivery</li>
-                            </ul>
-                        </div>
-                        <div>
-                            <!--we have defined these classes earlier,we are reusing them again-->
-                            <a href="#" class="btn btn-full">Sign Up</a>
-                        </div>
+        </div>
+    </section>
+    <section class="section-plans" id="plans" data-aos="fade-in" data-aos-duration="2000">
+        <div class="row">
+            <h2>Start Eating Healthy Today!</h2>
+        </div>
+        <div class="row">
+            <div class="col span-1-of-3">
+                <div class="plan-box">
+                    <div data-aos="zoom-in" data-aos-duration="2000">
+                        <h4>Premium</h4>
+                        <p class="plan-price">$399<span> / month</span></p>
+                        <p class="plan-price-meal">That's only 13.30$ per meal</p>
+                    </div>
+                    <div>
+                        <ul>
+                            <li>
+                                <ion-icon class="icon-small" name="checkmark-outline"></ion-icon>1 meal everyday</li>
+                            <li>
+                                <ion-icon class="icon-small" name="checkmark-outline"></ion-icon>Order 24/7</li>
+                            <li>
+                                <ion-icon class="icon-small" name="checkmark-outline"></ion-icon>Access to newest creations</li>
+                            <li>
+                                <ion-icon class="icon-small" name="checkmark-outline"></ion-icon>Free delivery</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <!--we have defined these classes earlier,we are reusing them again-->
+                        <a href="#" class="btn btn-full">Sign Up</a>
                     </div>
                 </div>
-                <div class="col span-1-of-3">
-                    <div class="plan-box">
-                        <div>
-                            <h4>Pro</h4>
-                            <p class="plan-price">$149 <span class=""> / month</span></p>
-                            <p class="plan-price-meal">That's only 14.90$ per meal</p>
-                        </div>
-                        <div>
-                            <ul>
-                                <li><ion-icon class="icon-small" name="checkmark-outline"></ion-icon>1 meal 10 days/month</li>
-                                <li><ion-icon class="icon-small" name="checkmark-outline"></ion-icon>Order 24/7</li>
-                                <li><ion-icon class="icon-small" name="checkmark-outline"></ion-icon>Access to newest creations</li>
-                                <li><ion-icon class="icon-small" name="checkmark-outline"></ion-icon>Free delivery</li>
-                            </ul>
-                        </div>
-                        <div>
-                            <a href="#" class="btn btn-ghost">Sign Up</a>
-                        </div>
+            </div>
+            <div class="col span-1-of-3">
+                <div class="plan-box">
+                    <div>
+                        <h4>Pro</h4>
+                        <p class="plan-price">$149 <span class=""> / month</span></p>
+                        <p class="plan-price-meal">That's only 14.90$ per meal</p>
+                    </div>
+                    <div>
+                        <ul>
+                            <li>
+                                <ion-icon class="icon-small" name="checkmark-outline"></ion-icon>1 meal 10 days/month</li>
+                            <li>
+                                <ion-icon class="icon-small" name="checkmark-outline"></ion-icon>Order 24/7</li>
+                            <li>
+                                <ion-icon class="icon-small" name="checkmark-outline"></ion-icon>Access to newest creations</li>
+                            <li>
+                                <ion-icon class="icon-small" name="checkmark-outline"></ion-icon>Free delivery</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <a href="#" class="btn btn-ghost">Sign Up</a>
                     </div>
                 </div>
-                <div class="col span-1-of-3">
-                    <div class="plan-box">
-                        <div>
-                            <h4>Starter</h4>
-                            <p class="plan-price"> $19<span> / meal</span></p>
-                            <!--For this col we dont have 2nd line as of previous cols so inorder to have same spacing as
+            </div>
+            <div class="col span-1-of-3">
+                <div class="plan-box">
+                    <div>
+                        <h4>Starter</h4>
+                        <p class="plan-price"> $19<span> / meal</span></p>
+                        <!--For this col we dont have 2nd line as of previous cols so inorder to have same spacing as
                             of previous col and align the text correctly and space we have used special keyword un html
                         as &nbsp;-->
-                            <p class="plan-price-meal">&nbsp;</p>
-                        </div>
-                        <div>
-                            <ul>
-                                <li><ion-icon class="icon-small" name="checkmark-outline"></ion-icon>1 meal month</li>
-                                <li><ion-icon class="icon-small" name="checkmark-outline"></ion-icon>Order 24/7</li>
-                                <!--<li><ion-icon name="checkmark-outline"></ion-icon>Access to newest creations</li>-->
-                                <!--In this col we dont have any acess li so inorder to have same spacing we have used the wrong symbol 
+                        <p class="plan-price-meal">&nbsp;</p>
+                    </div>
+                    <div>
+                        <ul>
+                            <li>
+                                <ion-icon class="icon-small" name="checkmark-outline"></ion-icon>1 meal month</li>
+                            <li>
+                                <ion-icon class="icon-small" name="checkmark-outline"></ion-icon>Order 24/7</li>
+                            <!--<li><ion-icon name="checkmark-outline"></ion-icon>Access to newest creations</li>-->
+                            <!--In this col we dont have any acess li so inorder to have same spacing we have used the wrong symbol 
                                 icon-->
-                                <ion-icon class="icon-small" name="close-outline"></ion-icon>
-                                <li><ion-icon class="icon-small" name="checkmark-outline"></ion-icon>Free delivery</li>
-                            </ul>
-                        </div>
-                        <div>
-                            <a href="#" class="btn btn-ghost">Sign Up</a>
-                        </div>
+                            <ion-icon class="icon-small" name="close-outline"></ion-icon>
+                            <li>
+                                <ion-icon class="icon-small" name="checkmark-outline"></ion-icon>Free delivery</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <a href="#" class="btn btn-ghost">Sign Up</a>
                     </div>
                 </div>
             </div>
-        </section>
-        <section class="section-form" data-aos="fade-in" data-aos-duration="2000">
-            <div class="row">
-                <h2>WE'RE HAPPY TO HEAR FROM YOU</h2>
-            </div>
-            <!--since we want our text to be at middle of the particular division-->
-            <div class="row">
-                <!--Since our we want a form setion we used the form and taken the action as # and getmethod is through POST(PHP)-->
-                <form action="#" method="POST" class="contact-form">
-                    <div class="row">
-                        <!--For left side names-->
-                        <div class="col span-1-of-3">
-                            <!--Label is for providing some extra information for the users-->
-                            <label>Name</label>
-                        </div>
-                        <!--For right hand side boxes and since we want this should be of more width we use the class spanof 2 of 3-->
-                        <div class="col span-2-of-3">
-                            <input type="text" name="name" id="name" placeholder="Your Name" required>
-                        </div>
+        </div>
+    </section>
+    <section class="section-form" data-aos="fade-in" data-aos-duration="2000">
+        <div class="row">
+            <h2>WE'RE HAPPY TO HEAR FROM YOU</h2>
+        </div>
+        <!--since we want our text to be at middle of the particular division-->
+        <div class="row">
+            <!--Since our we want a form setion we used the form and taken the action as # and getmethod is through POST(PHP)-->
+            <form action="#" method="POST" class="contact-form">
+                <div class="row">
+                    <!--For left side names-->
+                    <div class="col span-1-of-3">
+                        <!--Label is for providing some extra information for the users-->
+                        <label>Name</label>
                     </div>
-                    <div class="row">
-                        <!--For left side names-->
-                        <div class="col span-1-of-3">
-                            <!--Label is for providing some extra information for the users-->
-                            <label>Email</label>
-                        </div>
-                        <!--For right hand side boxes and since we want this should be of more width we use the class spanof 2 of 3-->
-                        <div class="col span-2-of-3">
-                            <input type="email" name="name" id="email" placeholder="Your Email" required>
-                        </div>
+                    <!--For right hand side boxes and since we want this should be of more width we use the class spanof 2 of 3-->
+                    <div class="col span-2-of-3">
+                        <input type="text" name="name" id="name" placeholder="Your Name" required>
                     </div>
-                    <div class="row">
-                        <!--For left side names-->
-                        <div class="col span-1-of-3">
-                            <!--Label is for providing some extra information for the users-->
-                            <label>How did you find us?</label>
-                        </div>
-                        <!--For right hand side boxes and since we want this should be of more width we use the class spanof 2 of 3-->
-                        <div class="col span-2-of-3">
-                            <!--For the drop down menu-->
-                            <select name="find-us" id="find-us">
+                </div>
+                <div class="row">
+                    <!--For left side names-->
+                    <div class="col span-1-of-3">
+                        <!--Label is for providing some extra information for the users-->
+                        <label>Email</label>
+                    </div>
+                    <!--For right hand side boxes and since we want this should be of more width we use the class spanof 2 of 3-->
+                    <div class="col span-2-of-3">
+                        <input type="email" name="name" id="email" placeholder="Your Email" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <!--For left side names-->
+                    <div class="col span-1-of-3">
+                        <!--Label is for providing some extra information for the users-->
+                        <label>How did you find us?</label>
+                    </div>
+                    <!--For right hand side boxes and since we want this should be of more width we use the class spanof 2 of 3-->
+                    <div class="col span-2-of-3">
+                        <!--For the drop down menu-->
+                        <select name="find-us" id="find-us">
                                 <option value="friends">Friends</option>
                                 <option value="search">Search Engine</option>
                                 <option value="ad">Advertisment</option>
                                 <option value="other">Other</option>
                             </select>
-                        </div>
                     </div>
-                    <div class="row">
-                        <!--For left side names-->
-                        <div class="col span-1-of-3">
-                            <!--Label is for providing some extra information for the users-->
-                            <label>Newsletter</label>
-                        </div>
-                        <!--For right hand side boxes and since we want this should be of more width we use the class spanof 2 of 3-->
-                        <div class="col span-2-of-3">
-                            <input type="checkbox" name="news" id="news" checked>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <!--For left side names-->
-                        <div class="col span-1-of-3">
-                            <!--Label is for providing some extra information for the users-->
-                           
-                            <label>Drop us a line</label>
-                        </div>
-                        <!--For right hand side boxes and since we want this should be of more width we use the class spanof 2 of 3-->
-                        <div class="col span-2-of-3">
-                            <textarea name="text" id="ta" cols="30" rows="10"></textarea>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <!--For left side names-->
-                        <div class="col span-1-of-3">
-                            <!--Label is for providing some extra information for the users-->
-                           <!--For null space-->
-                            <label>&nbsp;</label>
-                        </div>
-                        <!--For right hand side boxes and since we want this should be of more width we use the class spanof 2 of 3-->
-                        <div class="col span-2-of-3">
-                            <input type="submit" value="Send it">
-                        </div>
-                    </div>
-                </form>
-            </div>
-        </section>
-        <footer >
-            <div class="row">
-                <div class="col span-1-of-2">
-                     <ul class="footer-nav">
-                         <li><a href="#">About Us</a></li>
-                         <li><a href="#">Blog</a></li>
-                         <li><a href="#">Press</a></li>
-                         <li><a href="#">iOS App</a></li>
-                         <li><a href="#">Android App</a></li>
-                     </ul>
                 </div>
-                <div class="col span-1-of-2">
-                    <ul class="social-links">
-                        <li><a href="#"><ion-icon name="logo-facebook" class="fb"></ion-icon></a></li>
-                        <li><a href="#"><ion-icon name="logo-twitter" class="twitter"></ion-icon></ion-icon></a></li>
-                        <li><a href="#"><ion-icon name="logo-google" class="google"></ion-icon></a></li>
-                        <li><a href="#"><ion-icon name="logo-instagram" class="instagram"></ion-icon></a></li>
-                    </ul>
+                <div class="row">
+                    <!--For left side names-->
+                    <div class="col span-1-of-3">
+                        <!--Label is for providing some extra information for the users-->
+                        <label>Newsletter</label>
+                    </div>
+                    <!--For right hand side boxes and since we want this should be of more width we use the class spanof 2 of 3-->
+                    <div class="col span-2-of-3">
+                        <input type="checkbox" name="news" id="news" checked>
+                    </div>
                 </div>
-            </div>
-            <div class="row">
-                <p>Copyright &copy; 2015 by Omnifood.All rights reserved</p>
-            </div>
-        </footer>
-            <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-            <!--Inorder to find whether jquery is added in our page or not we can use the command jQuery in our console page of our webrowser
-            and if it returns a function then the jquery is included in our webpage-->
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-  <!--Initalisation of animations effect-->
-  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
+                <div class="row">
+                    <!--For left side names-->
+                    <div class="col span-1-of-3">
+                        <!--Label is for providing some extra information for the users-->
 
-  <script>
-    $(document).ready(function(){
-      // Add smooth scrolling to all links
-      $("a").on('click', function(event) {
-    
-        // Make sure this.hash has a value before overriding default behavior
-        if (this.hash !== "") {
-          // Prevent default anchor click behavior
-          event.preventDefault();
-    
-          // Store hash
-          var hash = this.hash;
-    
-          // Using jQuery's animate() method to add smooth page scroll
-          // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-          $('html, body').animate({
-            scrollTop: $(hash).offset().top
-          }, 800, function(){
-    
-            // Add hash (#) to URL when done scrolling (default click behavior)
-            window.location.hash = hash;
-          });
-        } // End if
-      });
-    });
+                        <label>Drop us a line</label>
+                    </div>
+                    <!--For right hand side boxes and since we want this should be of more width we use the class spanof 2 of 3-->
+                    <div class="col span-2-of-3">
+                        <textarea name="text" id="ta" cols="30" rows="10"></textarea>
+                    </div>
+                </div>
+                <div class="row">
+                    <!--For left side names-->
+                    <div class="col span-1-of-3">
+                        <!--Label is for providing some extra information for the users-->
+                        <!--For null space-->
+                        <label>&nbsp;</label>
+                    </div>
+                    <!--For right hand side boxes and since we want this should be of more width we use the class spanof 2 of 3-->
+                    <div class="col span-2-of-3">
+                        <input type="submit" value="Send it">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <div class="row">
+            <div class="col span-1-of-2">
+                <ul class="footer-nav">
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Press</a></li>
+                    <li><a href="#">iOS App</a></li>
+                    <li><a href="#">Android App</a></li>
+                </ul>
+            </div>
+            <div class="col span-1-of-2">
+                <ul class="social-links">
+                    <li>
+                        <a href="#">
+                            <ion-icon name="logo-facebook" class="fb"></ion-icon>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <ion-icon name="logo-twitter" class="twitter"></ion-icon>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <ion-icon name="logo-google" class="google"></ion-icon>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <ion-icon name="logo-instagram" class="instagram"></ion-icon>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <p>Copyright &copy; 2015 by Omnifood.All rights reserved</p>
+        </div>
+    </footer>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!--Inorder to find whether jquery is added in our page or not we can use the command jQuery in our console page of our webrowser
+            and if it returns a function then the jquery is included in our webpage-->
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <!--Initalisation of animations effect-->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
     </script>
-    </body>
+
+    <script>
+        $(document).ready(function() {
+            // Add smooth scrolling to all links
+            $("a").on('click', function(event) {
+
+                // Make sure this.hash has a value before overriding default behavior
+                if (this.hash !== "") {
+                    // Prevent default anchor click behavior
+                    event.preventDefault();
+
+                    // Store hash
+                    var hash = this.hash;
+
+                    // Using jQuery's animate() method to add smooth page scroll
+                    // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 800, function() {
+
+                        // Add hash (#) to URL when done scrolling (default click behavior)
+                        window.location.hash = hash;
+                    });
+                } // End if
+            });
+        });
+    </script>
+</body>
+
 </html>
